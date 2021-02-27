@@ -38,7 +38,7 @@
           <!-- Nav -->
           <nav class="col">
             <ul class="nav__list d-inline-flex justify-content-around align-self-center">
-              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+              <li class="nav__item nav__item--active"><a href="#" class="nav__link">Home</a></li>
               <li class="nav__item"><a href="#" class="nav__link">Bio</a></li>
               <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
               <li class="nav__item"><a href="#" class="nav__link">Lessons</a></li>
@@ -75,8 +75,15 @@
     <div id="main">
 
     </div>
-    <footer>
-      footer
+    <footer class="d-flex justify-content-center align-items-center flex-column pt-4 pb-4">
+      <h6 class="footer-heading hex-white">Coded with love by Rap Esteva</h6>
+      <div class="footer__bottom container__nowrap">
+        <div class="footer-extras pt-20">
+          <a href="{{ site.baseurl }}/site-info" class="footer-extras__link hex-white">Site info</a> <span
+            class="footer-extra__seperator pr-10 pl-10">|</span>
+          <a href="#" target="_blank" class="footer-extras__link hex-white">Alternate Profile</a>
+        </div>
+      </div>
     </footer>
   </div>
 

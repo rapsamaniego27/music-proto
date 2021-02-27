@@ -12,6 +12,10 @@ nav{
   justify-content:flex-end;
   align-items: center;
 
+    .nav__item--active{
+      box-shadow: inset 0px -4px 0px 0px var(--accent);
+    }
+
     .nav__item{  
       height:100%;  
       display:flex;
