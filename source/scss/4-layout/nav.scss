@@ -12,6 +12,11 @@ nav{
   justify-content:flex-end;
   align-items: center;
 
+  @media only screen and (max-width:900px){
+    height:80px;
+  }
+
+
     .nav__item--active{
       box-shadow: inset 0px -4px 0px 0px var(--accent);
     }
@@ -21,6 +26,9 @@ nav{
       display:flex;
       justify-content:center;
       align-items: center;
+      margin:0 10px;
+      font-size:clamp(1.1rem, 1.5vw, 1.75rem);
+      font-weight:var(--weight-semibold);
 
       &:hover{
         box-shadow: inset 0px -4px 0px 0px var(--accent);

@@ -15,7 +15,7 @@ mix.options({
     processCssUrls: false
 }).sass('source/scss/style.scss', 'dist/style.min.css');
  
-mix.combine([
+mix.scripts([
     'source/js/classes/*',
     'source/js/components/*',
     'source/js/misc/*',

@@ -36,7 +36,7 @@
           </div>
         
           <!-- Nav -->
-          <nav class="col">
+          <nav class="col d-none d-md-block">
             <ul class="nav__list d-inline-flex justify-content-around align-self-center">
               <li class="nav__item nav__item--active"><a href="#" class="nav__link">Home</a></li>
               <li class="nav__item"><a href="#" class="nav__link">Bio</a></li>
@@ -45,7 +45,7 @@
             </ul>
           </nav>
         
-          <div class="header__social-media col d-flex align-items-center justify-content-around">
+          <div class="header__social-media col d-flex align-items-center justify-content-end d-none d-md-flex">
             <ul class="social-media">
               <li class="social-media__item">
                 <a href="#" target="_blank" class="social-media__link">
@@ -54,21 +54,25 @@
               </li>
               <li class="social-media__item">
                 <a href="#" target="_blank" class="social-media__link">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="social-media__item">
                 <a href="#" target="_blank" class="social-media__link">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fas fa-globe"></i>
                 </a>
               </li>
               <li class="social-media__item">
                 <a href="#" target="_blank" class="social-media__link">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fas fa-envelope"></i>
                 </a>
               </li>
             </ul>
           </div>
+
+          <a href="#" target="_blank" class="menu__bento-link col d-flex justify-content-end align-items-center d-md-none" id="menuOpen">
+            <img src="./assets/images/bento-menu.svg" alt="Bento" title="Bento" class="menu-bento">
+          </a>
         </div>
       </div>
     </header>
@@ -79,15 +83,49 @@
       <h6 class="footer-heading hex-white">Coded with love by Rap Esteva</h6>
       <div class="footer__bottom container__nowrap">
         <div class="footer-extras pt-20">
-          <a href="{{ site.baseurl }}/site-info" class="footer-extras__link hex-white">Site info</a> <span
+          <a href="{{ site.baseurl }}/site-info" class="footer-extras__link hex-white blurb1">Site info</a> <span
             class="footer-extra__seperator pr-10 pl-10">|</span>
-          <a href="#" target="_blank" class="footer-extras__link hex-white">Alternate Profile</a>
+          <a href="#" target="_blank" class="footer-extras__link hex-white blurb1">Alternate Profile</a>
         </div>
       </div>
     </footer>
+
+
+      <!-- Row Menu Overlay -->
+      <div class="mobile-menu-overlay d-md-none" id="menuOverlay">
+        <a href="#" target="_blank" class="menu-close hex-white" id="menuClose"><i
+            class="fas fa-times-circle"></i></a>
+        <ul class="mobile-menu-nav" id="menuNav">
+          <li class="menu-item">
+            <a href="#" class="menu-link hex-white">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link hex-white">Bio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link hex-white">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link hex-white">Lessons</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link hex-white">Developer Site</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Menu Overlay -->
+
+
+
   </div>
 
   <!-- Row Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+    integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+    crossorigin="anonymous"></script>
   <script src="./dist/app.js" defer></script>
 </body>
 
