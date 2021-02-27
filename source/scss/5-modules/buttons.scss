@@ -1,17 +1,23 @@
 
-.btn-success{
+.cbtn-success{
   @include btn-background(color('success'));
 }
 
-.btn-danger{
+.cbtn-danger{
   @include btn-background(color('danger'));
 }
 
-.btn-info{
+.cbtn-info{
   @include btn-background(color('info'));
 }
 
-.btn-warning{
+.cbtn-warning{
   @include btn-background(color('warning'));
 }
+
+.cbtn-tertiary{
+  @include btn-background(color('tertiary'));
+  color:var(--dark);
+}
+
 

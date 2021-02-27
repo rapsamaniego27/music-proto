@@ -1,0 +1,10 @@
+.welcome__container{
+  background: url(../assets/images/home-background.svg) left center no-repeat;
+  background-size:1000px auto;
+  height:500px;
+}
+
+.welcome__subheading{
+  font-family: $sans-serif;
+  font-weight: var(--weight-semibold);
+}
