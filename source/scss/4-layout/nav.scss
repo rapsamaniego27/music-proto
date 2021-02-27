@@ -1,0 +1,38 @@
+nav{
+  
+}
+
+.nav__list{
+  padding-left:0 !important;
+  margin-bottom:0 !important;
+  width:100%;
+  min-height:100px;
+  height:100px;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+
+    .nav__item{  
+      height:100%;  
+      display:flex;
+      justify-content:center;
+      align-items: center;
+
+      &:hover{
+        box-shadow: inset 0px -4px 0px 0px var(--accent);
+        >{
+          .nav__link{
+            color:var(--accent);
+          }
+        }
+      }
+
+      .nav__link{
+        color:var(--white);
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+      }
+    }
+  }
