@@ -26,7 +26,7 @@
 <body>
   <div id="wrapper">
     <header class="d-flex align-items-center">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
           <!-- Logo here -->
           <div class="header__logo__container col d-flex align-items-center">
@@ -79,20 +79,33 @@
     <div id="main">
       <!-- Row Welcome -->
       <div class="welcome__container">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
-            <div class="col-md-6">
-              <h1 class="welcome__heading hex-tertiary">Sharing the gift of music
-                <br> to everyone
-              </h1>
-              <h4 class="welcome__subheading hex-white">Guitarist | Violinist</h4>
-              <a href="#" target="_blank" class="btn cbtn-tertiary">See More</a>
+            <div class="col-md-6 col-sm-8 col-xs-12 d-flex flex-column justify-content-center welcome__left">
+              <div class="welcome__content">
+                <h1 class="welcome__heading pt-2 hex-tertiary">Sharing the gift of music
+                   to everyone
+                </h1>
+                <h4 class="welcome__subheading pb-2 hex-white">Guitarist | Violinist</h4>
+                <a href="#" target="_blank" class="btn cbtn-tertiary width-content mt-5 mb-3 btn-welcome">See More</a>
+              </div>
             </div>
-            <div class="col-md-6">
-             
+            <div class="col-md-6 col-sm-4 col-xs-12 position-relative d-flex justify-content-end welcome__model-right">
+              <div class="welcome__model-container">
+                <div class="welcome__model-circle">
+                  <img src="./assets/images/violin.svg" alt="Violin" title="Violin" class="welcome__model-circle__img">
+                </div>
+                <img src="./assets/images/home-rap.png" alt="Rap Esteva" title="Rap Esteva" class="welcome__model">
+                <img src="./assets/images/noteset.svg" alt="Noteset" title="Noteset" class="welcome__note-set">
+              </div>    
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Row Information -->
+      <div class="information__container">
+        <p>Hello</p>
       </div>
 
     </div>
@@ -100,7 +113,7 @@
       <h6 class="footer-heading hex-white">Coded with love by Rap Esteva</h6>
       <div class="footer__bottom container__nowrap">
         <div class="footer-extras pt-20">
-          <a href="{{ site.baseurl }}/site-info" class="footer-extras__link hex-white blurb1">Site info</a> <span
+          <a href="#" class="footer-extras__link hex-white blurb1">Site info</a> <span
             class="footer-extra__seperator pr-10 pl-10">|</span>
           <a href="#" target="_blank" class="footer-extras__link hex-white blurb1">Alternate Profile</a>
         </div>
