@@ -20,4 +20,10 @@
   color:var(--dark);
 }
 
+.cbtn-accent{
+  @include btn-background(color('accent'));
+  width:max-content;
+}
+
+
 
