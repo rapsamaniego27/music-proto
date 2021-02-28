@@ -1,10 +1,10 @@
 .welcome__container{
   background: url(../assets/images/home-background.svg) left center no-repeat;
   background-size:1000px auto;
-  height:500px;
+  height:max-content;
   position:relative;
 
-  @media only screen and (max-width:1200px){
+ /*  @media only screen and (max-width:1200px){
     height:391px;
   }
   @media only screen and (max-width:768px){
@@ -14,7 +14,7 @@
   @media only screen and (max-width:576px){
     max-height:434px;
     height:100%;
-  }
+  } */
 
 }
 
@@ -53,16 +53,13 @@
 
 /* Model */
 .welcome__model-circle{
-  width:434px;
-  height:434px;
-  border-radius:50%;
-  background: var(--tertiary);
-  overflow: hidden;
   position:relative;
-  top: 28px;
-  right: 18px;
+  background:url('../assets/images/Circle.svg') center / contain no-repeat ;
+  display:flex;
+  justify-content:center;
+  align-items: center;
 
-  @media only screen and (max-width:1200px){
+/*   @media only screen and (max-width:1200px){
     width:360px;
     height:360px;
   }
@@ -72,7 +69,7 @@
     height:200px;
     top: -5px;
     right: 0;
-  }
+  } */
 
 
   .welcome__model-circle__img{
@@ -85,48 +82,23 @@
 
 
   .welcome__note-set{
-    position:absolute;
-    bottom:0;
-    left:0;  
-    bottom: -30px;
-    left: -107px;
+    position:absolute; 
+    bottom: 30px;
+    left: -121px;
+    width:198px;
 
     @media only screen and (max-width:768px){
-      width:100px;
+      width:120px;
       bottom: 24px;
-      left: -51px;
+      left: -70px;
     }
   }
 .welcome__model-container{
   position:relative;
 }
 
-.welcome__model{
 
-  @media only screen and (max-width:1200px){
-    width:330px;
-    height:auto;
-  }
 
-   @media only screen and (max-width:768px){
-    width:200px;
-    height:auto;
-  }
-
-}
-
-  .welcome__model{
-    position:absolute;
-    left:0;
-
-    @media only screen and (min-width:769px){
-      top:0;
-    }
-
-    @media only screen and (max-width:768px){
-      bottom: -5px !important;
-    }
-  }
 
   .welcome__model-right{
     padding-right:0 !important;
@@ -154,3 +126,20 @@
     }
     
   }
+
+  .welcome__model{
+
+    @media only screen and (max-width:1200px){
+      width:340px;
+    }
+
+    @media only screen and (max-width:768px){
+      width:280px;
+    }
+
+    @media only screen and (max-width:576px){
+      width:200px;
+    }
+  }
+
+  
