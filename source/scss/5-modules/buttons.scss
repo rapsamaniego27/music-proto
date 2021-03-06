@@ -15,9 +15,15 @@
   @include btn-background(color('warning'));
 }
 
+.cbtn-primary{
+  @include btn-background(color('primary'));
+   width:max-content;
+}
+
 .cbtn-tertiary{
   @include btn-background(color('tertiary'));
   color:var(--dark);
+  width:max-content;
 }
 
 .cbtn-accent{
