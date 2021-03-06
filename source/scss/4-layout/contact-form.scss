@@ -14,6 +14,10 @@
 
  form{
   padding:40px 40px 20px 40px;
+
+  @media only screen and (max-width:800px){
+   padding:40px 15px 20px 15px;
+  }
  }
 
  .form__two-col{
@@ -54,7 +58,7 @@
 
 textarea{
   @media only screen and (max-width:1200px){
-   height:160px;
+   height:170px;
   }
 }
 
