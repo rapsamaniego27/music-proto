@@ -18,17 +18,20 @@
 .cbtn-primary{
   @include btn-background(color('primary'));
    width:max-content !important;
+   width:inherit !important;
 }
 
 .cbtn-tertiary{
   @include btn-background(color('tertiary'));
   color:var(--dark);
   width:max-content !important;
+  width:inherit !important;
 }
 
 .cbtn-accent{
   @include btn-background(color('accent'));
-  width:max-content !important;
+   width:max-content !important;
+   width:inherit !important;
   
 }
 
